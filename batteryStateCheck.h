@@ -7,7 +7,6 @@
 
 #define ENGLISH 0
 #define GERMAN  1
-
 #define WARNINGPERCENTAGE 0.05
 
 #define OK 0
@@ -18,20 +17,18 @@
 
 typedef struct batterycondition
 {
-	char parameter[3][20];
-	char status[5][20];
-		
+   char parameter[3][20];
+   char status[5][20];		
 }batteryCondition;
 
 typedef struct paramInDiffLanguage
 {
-    char parameter[3][20];
-	char status[5][20];
+   char parameter[3][20];
+   char status[5][20];
 }DiffLanguage;
 
 extern batteryCondition batteryCond;
 extern DiffLanguage alertNotes[2];
-
 
 int checkLowerLimit(float input, float lowLimit, float highLimit) ;
 int checkHigherLimit(float input, float highLimit);
